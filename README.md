@@ -1,2 +1,4 @@
 # DSA-Javascript
-daily DSA problem solutions here
+Day-1: solved:
+1.
+....
