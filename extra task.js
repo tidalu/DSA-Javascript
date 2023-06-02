@@ -51,3 +51,58 @@ function sum_missing_numbers1(arr){
 };
 console.log(sum_missing_numbers1([4, 3, 8, 1, 2]));
 
+
+
+
+
+
+function sumExceptItself(arr){
+    
+    const resultArray = new Array();
+    const sum = arr.reduce((sum, num) => num + sum);
+    arr.forEach((el) => {
+        let item = sum - el;
+        resultArray.push(item);
+    });
+    return resultArray;
+}
+
+console.log(sumExceptItself([10, 20, 30, 40, 50, 60]));
+
+console.clear();
+
+const twoSmallestPositiveSum = (arr) => {
+    const newArray = arr.filter((num) => num > 0);
+    newArray.sort((a, b) => a - b);
+    return (newArray[0] + newArray[1]);
+}
+
+const sumTwoSmallestNums = (arr) => {  
+    var min1 = Infinity;
+    var min2 = Infinity;
+    arr.forEach((el) => {
+        if(el < min1 && el > 0){
+            min2 = min1;
+            min1 = el;
+        }else{
+            if(el < min2 && el>0){
+                min2 = el;
+            }
+        }
+    });
+    console.log(min2 + min1);
+}
+
+
+
+sumTwoSmallestNums([19, 5, 42, 2, 77]) //➞ 7
+
+sumTwoSmallestNums([10, 343445353, 3453445, 3453545353453])// ➞ 3453455
+
+sumTwoSmallestNums([2, 9, 6, -1]) // 8
+
+sumTwoSmallestNums([879, 953, 694, -847, 342, 221, -91, -723, 791, -587])// ➞ 563
+
+sumTwoSmallestNums([3683, 2902, 3951, -475, 1617, -2385]) //➞ 4519
+
+
