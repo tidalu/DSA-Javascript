@@ -26,7 +26,7 @@ function get_missing_letters1(str){
     return Array.from(leftLetters.keys()).join('');
 }
 
-// console.log(get_missing_letters1("zyxwvutsrq"))
+// console.log(get_missing_letters1("zyxwvutsrq"));
 
 const arr = [0, 2,3, 6, 4, 8, 3]
 
@@ -50,10 +50,6 @@ function sum_missing_numbers1(arr){
     
 };
 console.log(sum_missing_numbers1([4, 3, 8, 1, 2]));
-
-
-
-
 
 
 function sumExceptItself(arr){
@@ -103,6 +99,16 @@ sumTwoSmallestNums([2, 9, 6, -1]) // 8
 
 sumTwoSmallestNums([879, 953, 694, -847, 342, 221, -91, -723, 791, -587])// ➞ 563
 
-sumTwoSmallestNums([3683, 2902, 3951, -475, 1617, -2385]) //➞ 4519
+sumTwoSmallestNums([3683, 2902, 3951, -475, 1617, -2385])//➞ 4519
 
 
+
+
+// functioNAL JS REVIEW
+
+
+function getWorkshopDate() {
+    return new Date(2020, 11, 4).toDateString();
+}
+
+console.log(getWorkshopDate());
