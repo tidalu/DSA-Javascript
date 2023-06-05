@@ -1,6 +1,6 @@
 
 
-
+// get missing letters 
 
 function get_missing_letters(str){
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -13,6 +13,7 @@ function get_missing_letters(str){
 }
 
 
+// version 2
 
 function get_missing_letters1(str){
     let  leftLetters = new Map();
@@ -29,7 +30,7 @@ function get_missing_letters1(str){
 // console.log(get_missing_letters1("zyxwvutsrq"));
 
 const arr = [0, 2,3, 6, 4, 8, 3]
-
+// sum of missing number in given array
 function sum_missing_numbers(arr){
     const max = Math.max(...arr);
     const min = Math.min(...arr);
@@ -41,6 +42,7 @@ function sum_missing_numbers(arr){
         return sum;
     }, 0);
 };
+// version 2
 function sum_missing_numbers1(arr){
     const max = Math.max(...arr);
     const min = Math.min(...arr);
@@ -51,14 +53,14 @@ function sum_missing_numbers1(arr){
 };
 console.log(sum_missing_numbers1([4, 3, 8, 1, 2]));
 
-
+// sum except itself
 function sumExceptItself(arr){
     
     const resultArray = new Array();
     const sum = arr.reduce((sum, num) => num + sum);
     arr.forEach((el) => {
         let item = sum - el;
-        resultArray.push(item);
+        resultArray.push(item);s
     });
     return resultArray;
 }
@@ -67,12 +69,14 @@ console.log(sumExceptItself([10, 20, 30, 40, 50, 60]));
 
 console.clear();
 
+// sum of two smallest positive nubers of the array
 const twoSmallestPositiveSum = (arr) => {
     const newArray = arr.filter((num) => num > 0);
     newArray.sort((a, b) => a - b);
     return (newArray[0] + newArray[1]);
 }
 
+// version 2
 const sumTwoSmallestNums = (arr) => {  
     var min1 = Infinity;
     var min2 = Infinity;
