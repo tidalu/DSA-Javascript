@@ -1,16 +1,14 @@
 
 var reverse = function(x) {
     var arr = Array.from(String(x));
-    var sign ;
-    console.log('this', arr.reduce( (acc, curr, idx) => curr == '-' ? sign = curr : acc[idx] = parseInt(x), []));
-    const newA = arr.reduce((acc, curr, idx) => curr == '-' ? sign = curr : acc[idx] = parseInt(x), []);
-    console.log(aRR, 'new');
-    // newA.filter( x => !isNaN(x));
-    // return sign +  parseInt(newA.reverse().join(''));
-
-    // return arr;
+    arr.includes('-') ? sign = '-' : sign = '';
+    arr.map(x => parseInt(x)).filter( x => !isNaN(x));
+    sign != (undefined || null ) ? arr.push(sign) : -1; 
+    var returnVal  =  parseInt(arr.reverse().join(''));
+    return (returnVal  > Math.pow(-2, 31) && returnVal < Math.pow(2, 31) - 1) ? returnVal : 0
 };
 
 console.log(reverse(-213))
 console.log(reverse(123))
 console.log(reverse(120))
+console.log(reverse(1534236469))
