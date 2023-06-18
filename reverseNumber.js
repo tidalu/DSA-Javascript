@@ -3,7 +3,7 @@ var reverse = function(x) {
     var arr = Array.from(String(x));
     arr.includes('-') ? sign = '-' : sign = '';
     arr.map(x => parseInt(x)).filter( x => !isNaN(x));
-    sign != (undefined || null ) ? arr.push(sign) : -1; 
+    arr.push(sign);
     var returnVal  =  parseInt(arr.reverse().join(''));
     return (returnVal  > Math.pow(-2, 31) && returnVal < Math.pow(2, 31) - 1) ? returnVal : 0
 };
