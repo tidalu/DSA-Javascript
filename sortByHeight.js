@@ -1,5 +1,13 @@
 function solution(a) {
-
+    var count = 0;
+    const arr = a.filter(x => x !== -1).sort((a, b) => a - b);
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] != -1) {
+            a[i] = arr[count];
+            count++;
+        }
+    }
+    return a;
 }
 
 
