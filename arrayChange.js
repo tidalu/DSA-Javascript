@@ -1,15 +1,13 @@
 function solution(inputArray) {
     var sum = 0;
     for (var i = 0; i < inputArray.length; i++) {
-        if (inputArray[i] >= inputArray[i + 1]) {
-            var temp = ((inputArray[i] + 1) - inputArray[i + 1])
-            sum =+ temp
-            console.log(temp)
-            inputArray[i+1] = inputArray[i] + 1;
+        if(inputArray[i] >= inputArray[i+1]){
+            sum += ((inputArray[i]+1) - inputArray[i+1])
+            inputArray[i+1] = (inputArray[i] + 1);
         }
     }
     return sum
-    // uncompleted
+    
 }
 
 
