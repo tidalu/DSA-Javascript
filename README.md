@@ -1,4 +1,4 @@
-1.  --- [ in progress ] --- [ 0 ] --- Array
+1.  --- [   pending   ] --- [ 0 ] --- Array
 2.  --- [   pending   ] --- [ 0 ] --- Strings
 3.  --- [   pending   ] --- [ 0 ] --- Matrices
 4.  --- [   pending   ] --- [ 0 ] --- Hashing
