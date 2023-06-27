@@ -12,7 +12,7 @@ var rotate = function (nums, k) {
             
         }
     }
-    return res; // uncomplete 
+    return res; // complete
 };
 
 
