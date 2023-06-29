@@ -8,3 +8,4 @@ var findTheDifference = function(s, t) {
 };
 
 console.log(findTheDifference("aa", "aaa"))
+// unfinished
