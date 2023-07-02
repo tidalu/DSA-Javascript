@@ -5,3 +5,6 @@
 var moveZeroes = function (nums) {
 
 };
+
+
+console.log([4, 3, 0, 2, 6, 0, 7, 0, 0])
