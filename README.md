@@ -1,3 +1,5 @@
+for now only _Logical_Building_ has some solved problems
+
 1.  --- [   pending   ] --- [ 0 ] --- Array
 2.  --- [   pending   ] --- [ 0 ] --- Strings
 3.  --- [   pending   ] --- [ 0 ] --- Matrices
