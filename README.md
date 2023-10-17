@@ -25,6 +25,7 @@ for now only _Logical_Building_ has some solved problems
 -----------------------------------------------------------------------
 
 --- Resources ---
+## this is be ing written top check that vs code is properly working and pushing s
 
 1. --- [    https://leetcode.com/problems/       ] ------- [ 0 ] --- [   Leetcode       ] ---- [  in progress  ]
 2. --- [    https://neetcode.io/                 ] ---------------------- [ 0 ] --- [   Neetcode       ] ---- [  in progress  ]
