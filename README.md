@@ -29,4 +29,4 @@ for now only _Logical_Building_ has some solved problems
 1. --- [    https://leetcode.com/problems/       ] ------- [ 0 ] --- [   Leetcode       ] ---- [  in progress  ]
 2. --- [    https://neetcode.io/                 ] ---------------------- [ 0 ] --- [   Neetcode       ] ---- [  in progress  ]
 3. --- [    https://app.codesignal.com/arcade/   ] --- [ 0 ] --- [   Codesignal     ] ---- [  in progress  ]
-4. --- [    https://takeuforward.org/            ] --------------- [ 0 ] --- [   TakeUForward   ] ---- [  in progress  ]
+4. --- [    https://takeuforward.org/            ] --------------- [ 0 ] --- [   TakeUForward   ] ---- [  in progress  ]    
