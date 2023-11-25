@@ -1,4 +1,4 @@
-```markdown
+
 # Time Complexity analysis in Data structures and algorithms 
 
 ## What is the input size?
@@ -107,4 +107,3 @@ It happens when an algorithm has to explore all possible scenarios of input. Exa
 1. Count the total number of critical operations performed by all the algorithms with respect to the input size.
 2. Then ignore the lower order terms and coefficients and represent them in the form of Big O.
 3. Finally, we compare the higher order term present in the Big O notation and decide on the efficient algorithm.
-```
