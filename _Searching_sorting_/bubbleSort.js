@@ -72,3 +72,5 @@ function bubbleSort(array) {
    * 
    * in this optimized version, best case scenarion gets changed to O(n), but the worst case scenario is not changed 
    */
+
+  // recursive way
