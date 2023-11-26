@@ -33,18 +33,16 @@ console.log(selectionSort([1, 4, 2, 8,-10,  12, 17, 2, 3, 56, 1]))
 // We build the partially sorted array incrementally by finding the minimum value from the unsorted part and adding it to the sorted part. At each step of the iteration, the sorted subarray size will grow by 1, and the unsorted subarray size will decrease by 1.
 
 function selectionLoop(array) {
-    for(let i = 0; i < array.length; i++) { 
-      var min = array[i];
+    for(let i = 0; i < array.length; i++) {
+      var min = i;
         for(let j = i; j < array.length - 1; j++) {
-          if(array[j] < min ) {
-            min = array[j];
-            
-            
-          var temp = array[i]
-          array[i] = array[j]
-          array[j] = temp
+          if(array[j] < array[min] ) {
+            min = j
           }
         }
+          var temp = array[i]
+          array[i] = array[min]
+          array[min] = temp
     }
   return array
 }
