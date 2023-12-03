@@ -46,3 +46,26 @@ function solution(a) {
   function solution(a) {
     return a.map((row, rowIndex) => a.map(val => val[rowIndex]).reverse())
   }
+
+
+  var rotate = function(matrix) {
+
+    for(let i = 0; i < matrix.length; i++) {
+    var left = 0;
+    var right = matrix.length - 1;
+    while (left <= right ) {
+      [matrix[i][left], matrix[i][right]] = [matrix[i][right], matrix[i][left]]
+      left++;
+      right --;
+    }
+    }
+var last = matrix.length-1;
+for(let i = 0 ; i < last; i++) {
+    let  k =last -1-i;
+  for(let j = k; j >=0; j--) {
+    [matrix[i][j], matrix[last-j][last-i]] = [matrix[last-j][last-i], matrix[i][j]]
+    
+  }
+}
+return matrix
+};
