@@ -29,3 +29,5 @@ var trap = function(height) {
 console.log("Test 1: ", trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])); // 6
 console.log("Test 2: ", trap([4, 2, 0, 3, 2, 5])); // 9
 
+// time complexity : O(n) since we are looping whole input only once 
+// space complexity: O(1) cuz we are not using extra space
