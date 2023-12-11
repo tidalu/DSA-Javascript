@@ -47,9 +47,9 @@ function getLongestSubarray(a, k) {
     return len;
 }
 
-let a = [2, 3, 5, 1, 9];
-let k = 10;
-let len = getLongestSubarray(a, k);
+var a = [2, 3, 5, 1, 9];
+var k = 10;
+var len = getLongestSubarray(a, k);
 console.log("The length of the longest subarray is:", len);
 
 
@@ -119,12 +119,12 @@ function get2(a, k) {
   
   
   
-  let a = [2, 3, 5, 1, 9]
+  var a = [2, 3, 5, 1, 9]
   
-  let k = 10;
+  var k = 10;
   
   
-  let len = get3(a, k)
+  var len = get3(a, k)
   console.log(len);
   
   function get3(a, k) {
