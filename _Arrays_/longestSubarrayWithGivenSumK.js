@@ -83,3 +83,74 @@ function getLongestSubarray(a, k) {
 // next  approach with two nested looops 
 // here also we in every nested loops 
 
+// better approach using hashing 
+
+function get2(a, k) {
+    let n= a.length
+    
+    let preSumMap = new Map()
+    
+    let sum = 0; 
+    let maxLen = 0;
+    for(let i = 0; i< n ; i++) {
+      
+      sum += a[i];
+      
+      if(sum == k ) {
+        maxLen  = Math.max(maxLen, i+1)
+      }
+      
+      let rem = sum - k;
+      
+      if(preSumMap.has(rem)) {
+        let len = i - preSumMap.get(rem)
+        maxLen = Math.max(maxLen, len);
+      }
+      
+      if(!preSumMap.has(sum)) {
+        preSumMap.set(sum, i)
+      }
+      }
+    
+    
+    return `${maxLen} this is `
+  }
+  
+  
+  
+  
+  let a = [2, 3, 5, 1, 9]
+  
+  let k = 10;
+  
+  
+  let len = get3(a, k)
+  console.log(len);
+  
+  function get3(a, k) {
+    let n = a.length
+    
+    let left = 0, right = 0;
+    let sum = a[0]
+    let maxLen = 0;
+    
+    while (right < n) {
+      
+      while(left <= right && sum > k) {
+        sum += a[left]
+        left++
+      }
+      
+      if(sum == k) {
+        maxLen = Math.max(maxLen, right - left + 1)
+      }
+      
+      
+      right++
+      if(right < n) sum+= a[right]
+    }
+    
+    return maxLen
+  }
+  
+  
