@@ -2,10 +2,6 @@
  * @param {number[][]} grid
  * @return {number[][]}
  */
-/**
- * @param {number[][]} grid
- * @return {number[][]}
- */
 var onesMinusZeros = function (grid) {
   let oneRow = [];
   let oneCol = [];
