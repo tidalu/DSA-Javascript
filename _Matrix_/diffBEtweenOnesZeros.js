@@ -62,8 +62,16 @@ console.log(
 // time complexity :initializing res array takes O(rowSize*colSize)
 // counting ones takes O(rowSize, colSize)
 // filling the res array takes also O(rowSize, colSize)
+// so O(3(rowSize*colSize)) we do not take constanta so time complexity is
+// O(rowSize * colSize)
 
 // space complexity :
+
+// res array O(rowSize*colSize) space
+// oneRow and oneCol arrays: These arrays store the count of ones in each row and each column, respectively. Both take O(max(rowSize, colSize)) space.
+
+// Variables (rowSize, colSize, count1, count2, i, j): These variables take constant space.
+// so : O(rowSize * colSize)
 
 // second optimized solution
 
@@ -107,3 +115,10 @@ console.log(
     [1, 1, 1],
   ])
 );
+
+// time complexity  :
+//  it is not  changes after even optimized, so O(rowSize * colSize)
+
+// space complexity :
+
+// it is now optimized, we are not using extra space to return , so we are taking in the wors case O(rowSize) ,  O(colSize)  in the wors case, like which one is bigger, os as it is . done
