@@ -79,3 +79,60 @@ var threeSum = function (nums) {
  * time complexity: O(n^ log m)
  * space complexity: O(n x k)  k is the number of the triplets
  */
+
+// third solution is :
+var threeSum = function (nums) {
+  let res = [];
+  let n = nums.length;
+  nums.sort((a, b) => a - b);
+  for (let i = 0; i < n; i++) {
+    if (i > 0 && nums[i] == nums[i - 1]) continue;
+    let j = i + 1;
+    let k = n - 1;
+
+    while (j < k) {
+      let sum = nums[i] + nums[j] + nums[k];
+      if (sum < 0) {
+        j++;
+      } else if (sum > 0) {
+        k--;
+      } else {
+        res.push([nums[i], nums[j], nums[k]]);
+        j++;
+        k--;
+        while (j < k && nums[j] == nums[j - 1]) j++;
+        while (j < k && nums[k] == nums[k + 1]) k--;
+      }
+    }
+  }
+  return res;
+};
+
+// aproach
+/**
+ * okay ,what wwe will do it is :
+ * firstly we will sort the array, and initialize an result
+ * array.
+ * we wiil use two pointer approach , and we will have
+ * three pointer, where first [i] one is in the beginning,
+ * second one is  after the beginninh [j] = [i+1], the
+ * third one is in the end,  and we will chech if the sum
+ * of these are  equal to the zero, so, if the presum is
+ * greater that the zero we decrement the k whihc is the
+ * last, why, cuza the array is sorted, and to decreement
+ * the pre sum we should lower the values,  else if the
+ * presum is less than the zero we wiln increment the j++
+ * which gets greater to reach to zero, and when presum is
+ * equal to zero, we will push the triplet array to the
+ * result aray, and also we should avoid having duplicate
+ * triplets, that is why increment the i, j,  and decrement
+ * the k to the next value which is not equal to previous ,
+ * why firstly arrya is sorted if there is duplicate
+ * elemend and if we do not skip the same values we will
+ * have the same triplets returned , so j and k will have
+ * this condition when presum is equal to zeor, and i when
+ * always it is incremented ,
+ */
+
+//   time complexity : O(nlogn) + O(n^2)
+//  space complexity : O(m)  m is the lendth of the result array the number of triplets
