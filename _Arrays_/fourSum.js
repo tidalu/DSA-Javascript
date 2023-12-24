@@ -52,4 +52,4 @@ var fourSum = function (nums, target) {
  */
 
 // time complexity : O(nlogn) + O(n^3)
-// space complexity: O(m)  where m is the number of the quadruples
+// space complexity: O(m)  where m is the number of the quadruplets
