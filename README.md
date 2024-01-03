@@ -1,5 +1,5 @@
 for now only _Logical_Building_ has some solved problems
-
+`
 1.  --- [   in progress   ] --- [ 39 ] --- Array
 2.  --- [   in progress   ] --- [ 4  ] --- Strings
 3.  --- [   in progress   ] --- [ 2  ] --- Matrices
@@ -19,8 +19,7 @@ for now only _Logical_Building_ has some solved problems
 17. --- [     pending     ] --- [ 0  ] --- Math & Geometry
 18. --- [     pending     ] --- [ 6  ] --- Recursion
 19. --- [     pending     ] --- [ 63 ] --- Logic Building
-
-
+`
 
 -----------------------------------------------------------------------
 
