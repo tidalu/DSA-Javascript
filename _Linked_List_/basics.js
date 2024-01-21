@@ -120,4 +120,104 @@ function removeK(head, k) {
 }
 
 result = removeK(result, 3);
+
+function removeElement(head, el) {
+  if (head == null) return null;
+
+  let prev = null;
+  let temp = head;
+
+  while (temp) {
+    if (temp.data == el) {
+      prev.next = prev.next.next;
+    }
+
+    prev = temp;
+    temp = temp.next;
+  }
+
+  return head;
+}
+
+result = removeElement(result, 7);
+
+function insertAsHead(head, el) {
+  let temp = new Node(el, head);
+  return temp;
+}
+result = insertAsHead(result, 100);
+
+function insertTail(head, val) {
+  if (head == null) return new Node(val);
+  let temp = head;
+
+  while (temp.next) {
+    temp = temp.next;
+  }
+
+  let anotherNode = new Node(val);
+
+  temp.next = anotherNode;
+
+  return head;
+}
+result = insertTail(result, 200);
+
+// insert tp
+
+function insertAtK(head, k, val) {
+  if (head == null) {
+    if (k == 1) return new Node(val);
+    return;
+  }
+
+  if (k == 1) {
+    return new Node(val, head);
+  }
+
+  let count = 0;
+  let temp = head;
+
+  while (temp) {
+    count++;
+
+    if (count == k - 1) {
+      let neeNode = new Node(val, temp.next);
+      temp.next = neeNode;
+      break;
+    }
+
+    temp = temp.next;
+  }
+
+  return head;
+}
+
+result = insertAtK(result, 3, 3000);
+
+function insertBeforeEl(head, el, val) {
+  if (head == null) {
+    return null;
+  }
+
+  if (head.data == el) {
+    return new Node(val, head);
+  }
+
+  let temp = head;
+
+  while (temp.next) {
+    if (temp.next.data == el) {
+      let neeNode = new Node(val, temp.next);
+      temp.next = neeNode;
+      break;
+    }
+
+    temp = temp.next;
+  }
+
+  return head;
+}
+
+result = insertBeforeEl(result, 3000, 5000);
 printLL(result);
