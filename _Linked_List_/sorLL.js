@@ -84,3 +84,6 @@ function sortByLinks(head) {
 
 let result = sortByLinks(head);
 print(result);
+
+// time complexity is O(n)
+// space complexity is O(1)
