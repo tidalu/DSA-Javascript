@@ -5,6 +5,13 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
+
+class ListNode {
+  constructor(val = 0, next = null) {
+    this.val = val;
+    this.next = next;
+  }
+}
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
